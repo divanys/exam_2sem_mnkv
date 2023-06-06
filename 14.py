@@ -1,11 +1,12 @@
-# Сгенерировать матрицу, в которой элементы больше 10 заменяются на 0
+# В матрице элементы последнего столбца заменить на -1.
+
 
 from random import randint
 
 
 rows = randint(3, 6)
 columns = randint(3, 6)
-matrix = [[randint(-5, 15) for j in range(columns)] for i in range(rows)] # создание матрицы
+matrix = [[randint(-10, 10) for j in range(columns)] for i in range(rows)] # создание матрицы
 
 print('Вывод матрицы:')
 for i in matrix:
@@ -13,8 +14,7 @@ for i in matrix:
 
 for i in range(rows):
     for j in range(columns):
-        if matrix[i][j] > 10:
-            matrix[i][j] = 0
+            matrix[i][-1] = -1 
 
 # Вывод результатов
 print('Вывод полученной матрицы:')

@@ -1,10 +1,10 @@
 # В матрице найти сумму отрицательных элементов в первой трети
 # матрицы.
 
-from random import randint
+from random import randint, randrange
 
 
-rows = randint(3, 9)
+rows = randrange(3, 9, 3)
 columns = randint(3, 9)
 matrix = [[randint(-10, 10) for j in range(columns)] for i in range(rows)] #создание матрицы
 
